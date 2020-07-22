@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/style.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+<h1>Fabrikam University</h1>
+<div class="navcontainer">
+    <ul class="navbar">
+        <li>@Html.ActionLink("Home Page", "Index", "Index")</li>
+        <li>@Html.ActionLink("College of Computing and Digital Media", "CDM", "CDM")</li>
+        <li>@Html.ActionLink("College of Education", "CE", "CE")</li>
+        <li>@Html.ActionLink("College of Law", "CL", "CL")</li>
+        <li>@Html.ActionLink("School of Music", "SM", "SM")</li>
+        <li>@Html.ActionLink("Admin Login", "SignIn", "Admin")</li>
+        <li>@Html.ActionLink("Blog Page", "DisplayBlogs", "Blog")</li>
+    </ul>
+</div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Alexander Karadsheh</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

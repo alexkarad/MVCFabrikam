@@ -1,0 +1,13 @@
+﻿@model MVCFabrikam.Models.BlogObj
+@{
+    ViewBag.Title = "Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("AddBlog", "Blog"))
+{
+    <label>Write New Blog</label>
+    @Html.TextAreaFor(m=>m.Post)
+    <button type="submit">Submit</button>
+}
+

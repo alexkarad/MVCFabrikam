@@ -1,0 +1,18 @@
+﻿@model MVCFabrikam.Models.AdminAccount
+@{
+    ViewBag.Title = "SignIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SignIn</h2>
+
+@* Parses AdminAccount object attributes into their respective text boxes *@
+
+@using (Html.BeginForm("ValidateLogin", "Admin", new {@class = "form"}))
+{
+    <label>Username</label>
+    @Html.TextBoxFor(Model=>Model.Username)
+    <label>Password</label>
+    @Html.TextBoxFor(Model=>Model.Password)
+    <button type="submit">Login</button>
+}

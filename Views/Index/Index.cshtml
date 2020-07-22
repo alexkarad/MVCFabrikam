@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <body>
+
+        <div class="bigcontainer">
+            <div class="container">
+                <div id="jquery-slideshow-container">
+
+                    <ul id="jquery-slideshow">
+                        <li style="background-image: url(~/Images/FabrikamImage1.jfif);">
+                            <img class="hello" src="~/Images/FabrikamImage1.jfif" alt="softball team"/>
+                        </li>
+                        <li style="background-image: url(~/Images/Magic-Johnson.jpg);">
+                            <img src="~/Images/Magic-Johnson.jpg" alt="Magic Johnson"/>
+                        </li>
+                        <li style="background-image: url(~/Images/Michael-Jordan.jpg);">
+                            <img src="~/Images/Michael-Jordan.jpg" alt="Michael Jordan"/>
+                        </li>
+                        <li style="background-image: url(~/Images/Child-Prodigy.jpg);">
+                            <img src="~/Images/Child-Prodigy.jpg" alt="Child Prodigy"/>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <input type="radio" name="place" value="1" />
+                    <input type="radio" name="place" value="2" />
+                    <input type="radio" name="place" value="3" />
+                    <input type="radio" name="place" value="4" />
+                </div>
+                <br />
+                <div class="content">
+                    <div class="info">
+                        <h3>About Fabrikam</h3>
+                        <p>
+                            Fabrikam University is a liberal arts school with many different options for potential students to choose from.
+                            Quite difficult to get into, Fabrikam upholds a culture of strong academic standing. The students
+                            do have time for fun, however, as Fabrikam boasts a booming Greek life and many clubs for its students to join.
+                        </p>
+                        <br />
+
+                    </div>
+                    <div class="table">
+
+                        <table class="classes">
+                            <tr>
+                                <th>School</th>
+                                <th>Class #</th>
+                                <th>Open Spots</th>
+                            </tr>
+                            <tr>
+                                <td>COE</td>
+                                <td>12345</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CDM</td>
+                                <td>13579</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>COL</td>
+                                <td>48372</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>COM</td>
+                                <td>92857</td>
+                                <td>7</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="~/Images/FabrikamLogo.png" alt="Fabrikam Logo" />
+                </div>
+
+                <div class="contact">
+                    <ul class="register">
+                        <li>Register for:</li>
+                        <li>Clubs</li>
+                        <li>Pay my bill</li>
+                        <li>Campuses</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="campus">
+                    <img src="~/Images/FabrikamCampus.jpg" alt="Fabrikam's Campus" />
+                </div>
+            </div>
+        </div>
+        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+        <script src="~/Scripts/ImageRotator.js"></script>
+    </body>
+
